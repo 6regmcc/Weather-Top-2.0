@@ -1,0 +1,50 @@
+{
+  "stationCollection": [
+    {
+      "name": "Dublin",
+      "readings": [
+        {
+          "code": 10,
+          "temp": 66,
+          "wind": 33,
+          "pressure": 44
+        },
+        {
+          "code": 10,
+          "temp": 66,
+          "wind": 33,
+          "pressure": 44
+        },
+        {
+          "code": 10,
+          "temp": 66,
+          "wind": 33,
+          "pressure": 44
+        }
+      ]
+    },
+    {
+      "name": "Galway",
+      "readings": [
+        {
+          "code": 10,
+          "temp": 66,
+          "wind": 33,
+          "pressure": 44
+        },
+        {
+          "code": 10,
+          "temp": 66,
+          "wind": 33,
+          "pressure": 44
+        },
+        {
+          "code": 10,
+          "temp": 66,
+          "wind": 33,
+          "pressure": 44
+        }
+      ]
+    }
+  ]
+}
