@@ -1,10 +1,23 @@
 'use strict';
 
-const logger = require('../utils/logger');
+const stationStore = {
 
+    stationCollection: require('./stations-store.json').stationCollection,
 
+    getAllStations() {
+        return this.stationCollection;
+    },
 
+    getStation(id) {
+        let foundStation = null;
+        for (let station of this.stationCollection) {
+            if (id == station.id) {
+                foundStation = station;
+            }
+        }
 
-const stationCollection = require('../models/stations-store.json').stationCollection
+        return foundStation;
+    },
+};
 
-module.exports = stationCollection;
+module.exports = stationStore;

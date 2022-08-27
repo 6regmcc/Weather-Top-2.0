@@ -1,16 +1,16 @@
 "use strict";
 
 const logger = require("../utils/logger");
-const stationCollection = require("../models/stations-store")
+const stationStore = require("../models/stations-store")
 
 const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const viewData = {
-      title: "what do I put here",
-      stations: stationCollection,
-
+      title: "Weathertop 2.0",
+      stations: stationStore.getAllStations(),
     };
+    logger.info('about to render', stationStore.getAllStations);
     response.render("dashboard", viewData);
   },
 };
