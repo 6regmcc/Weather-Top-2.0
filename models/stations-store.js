@@ -1,4 +1,5 @@
 'use strict';
+const _ = require('lodash');
 
 const stationStore = {
 
@@ -20,7 +21,8 @@ const stationStore = {
     },
     removeReading(id, readingId) {
         const station = this.getStation(id);
-        console.log(`this is the id ${id} and this is the reading ${readingId}`)
+        _.remove(station.readings, { id: readingId });
+
         // TODO : remove the song with id songId from the playlist
     },
 };
