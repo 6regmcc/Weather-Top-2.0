@@ -10,20 +10,12 @@ const stationStore = {
     },
 
     getStation(id) {
-        let foundStation = null;
-        for (let station of this.stationCollection) {
-            if (id == station.id) {
-                foundStation = station;
-            }
-        }
-
-        return foundStation;
+        return _.find(this.stationCollection, { id: id });
     },
     removeReading(id, readingId) {
         const station = this.getStation(id);
-        _.remove(station.readings, { id: readingId });
 
-        // TODO : remove the song with id songId from the playlist
+        _.remove(station.readings, { id: readingId });
     },
 };
 

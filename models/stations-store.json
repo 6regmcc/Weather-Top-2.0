@@ -1,25 +1,25 @@
 {
   "stationCollection": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Dublin",
       "readings": [
         {
-          "id": 3,
+          "id": "3",
           "code": 10,
           "temp": 66,
           "wind": 33,
           "pressure": 44
         },
         {
-          "id": 4,
+          "id": "4",
           "code": 10,
           "temp": 66,
           "wind": 33,
           "pressure": 44
         },
         {
-          "id": 5,
+          "id": "5",
           "code": 10,
           "temp": 66,
           "wind": 33,
@@ -28,25 +28,25 @@
       ]
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Galway",
       "readings": [
         {
-          "id": 6,
+          "id": "6",
           "code": 10,
           "temp": 66,
           "wind": 33,
           "pressure": 44
         },
         {
-          "id": 7,
+          "id": "7",
           "code": 10,
           "temp": 66,
           "wind": 33,
           "pressure": 44
         },
         {
-          "id": 8,
+          "id": "8",
           "code": 10,
           "temp": 66,
           "wind": 33,

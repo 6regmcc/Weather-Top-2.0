@@ -4,7 +4,7 @@ const express = require("express");
 const router = express.Router();
 
 const dashboard = require("./controllers/dashboard.js");
-const about = require("./controllers/about.js");
+const about = require("../../try again/Weathertop2.0/controllers/about.js");
 const station = require('./controllers/station.js');
 
 router.get("/", dashboard.index);
