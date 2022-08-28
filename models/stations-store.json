@@ -6,24 +6,24 @@
       "readings": [
         {
           "id": "3",
-          "code": 10,
+          "code": 188,
           "temp": 66,
-          "wind": 33,
+          "wind": 343,
           "pressure": 44
         },
         {
           "id": "4",
-          "code": 10,
-          "temp": 66,
+          "code": 500,
+          "temp": 666,
           "wind": 33,
-          "pressure": 44
+          "pressure": 445
         },
         {
           "id": "5",
-          "code": 10,
-          "temp": 66,
-          "wind": 33,
-          "pressure": 44
+          "code": 22,
+          "temp": 888,
+          "wind": 2,
+          "pressure": 22344
         }
       ]
     },
@@ -33,24 +33,24 @@
       "readings": [
         {
           "id": "6",
-          "code": 10,
+          "code": 13333330,
           "temp": 66,
           "wind": 33,
           "pressure": 44
         },
         {
           "id": "7",
-          "code": 10,
-          "temp": 66,
-          "wind": 33,
-          "pressure": 44
+          "code": 22,
+          "temp": 77,
+          "wind": 3333,
+          "pressure": 4765434
         },
         {
           "id": "8",
-          "code": 10,
-          "temp": 66,
-          "wind": 33,
-          "pressure": 44
+          "code": 4568,
+          "temp": 284,
+          "wind": 278,
+          "pressure": 395
         }
       ]
     }
