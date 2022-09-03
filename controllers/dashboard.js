@@ -13,17 +13,17 @@ const dashboard = {
       title: "Weathertop 2.0",
       data: {
         stations: stationStore.getAllStations(),
-        calculations: calculations.returnCalculations( { id: '3', code: 500, temp: 66, wind: 33, pressure: 44 }),
-
       },
 
     };
+
     logger.info('about to render', stationStore.getAllStations);
     response.render("dashboard", viewData);
   },
   deleteStation(request, response) {
     const stationId = request.params.id;
     logger.debug(`Deleting Station ${stationId}`);
+    console.log('this is running');
     stationStore.removeStation(stationId);
     response.redirect('/dashboard');
   },
@@ -32,6 +32,7 @@ const dashboard = {
       id: uuid.v1(),
       name: request.body.name,
       readings: [],
+
     };
     stationStore.addStation(newStation);
     response.redirect('/dashboard');

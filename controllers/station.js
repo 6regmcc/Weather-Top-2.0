@@ -31,8 +31,9 @@ const station = {
             pressure: request.body.pressure,
             id: uuid.v1(),
         };
+
         logger.debug('New Reading  = ', newReading);
-        stationStore.addReading(stationId, newReading);
+        stationStore.addReading(stationId, newReading, newReading.id );
         response.redirect('/station/' + stationId);
     },
 };

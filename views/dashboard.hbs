@@ -30,9 +30,9 @@
                 <div class="meta">
                 </div>
                 <div class="description">
-                  {{readings.0.code}}
+                  {{#each readings}}{{#if @last}}{{code}}{{/if}}{{/each}}
                   <br>
-                  {{../data.calculations.latestWeatherText}}
+                  {{calculations.0.latestWeatherText}}
                 </div>
               </div>
             </div>
@@ -46,7 +46,8 @@
                 <div class="meta">
                 </div>
                 <div class="description">
-                  {{readings.0.temp}} C<br>
+                  {{#each readings}}{{#if @last}}{{temp}}{{/if}}{{/each}} C
+                  <br>
                   <i class="${station.temperatureTrendingValue}"></i>
                 </div>
               </div>
@@ -61,7 +62,7 @@
                 <div class="meta">
                 </div>
                 <div class="description">
-                  {{readings.0.wind}}
+                  {{#each readings}}{{#if @last}}{{wind}}{{/if}}{{/each}}
                 </div>
               </div>
             </div>
@@ -75,7 +76,7 @@
                 <div class="meta">
                 </div>
                 <div class="description">
-                  {{readings.0.pressure}} hpa
+                  {{#each readings}}{{#if @last}}{{pressure}}{{/if}}{{/each}} hpa
                 </div>
               </div>
             </div>

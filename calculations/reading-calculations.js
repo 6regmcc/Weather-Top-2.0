@@ -4,17 +4,20 @@ const logger = require("../utils/logger");
 const stationStore = require("../models/stations-store").stationCollection
 
 class Calculations {
-  constructor(reading) {
+
+  constructor(reading ,readingUUID) {
+
     this.latestWeatherText = latestWeatherText(reading.code, 'text');
+    this.readingUUID = readingUUID;
+
   }
 }
 
 
-
 const readingCalculations = {
-  returnCalculations(reading){
-    console.log("this is runingin")
-    return new Calculations(reading);
+  returnCalculations(reading ,readingUUID){
+    return new Calculations(reading, readingUUID);
+
   }
 
 }
@@ -51,7 +54,6 @@ const latestWeatherText = (code, selector) => {
   }
 
   if (selector == 'text'){
-    console.log(weatherCodeText);
     return weatherCodeText;
   }else if(selector == 'icon'){
     return weatherCodeIcon;

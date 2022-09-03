@@ -1,56 +1,59 @@
 {
   "stationCollection": [
     {
-      "id": "1",
-      "name": "Dublin",
+      "id": "b70f0640-2bba-11ed-b5a8-21a8817247d6",
+      "name": "test",
       "readings": [
         {
-          "id": "3",
-          "code": 188,
-          "temp": 66,
-          "wind": 343,
-          "pressure": 44
-        },
+          "code": "400",
+          "temp": "3",
+          "wind": "",
+          "pressure": "33",
+          "id": "e8c528e0-2bba-11ed-aa76-05ea57250e46"
+        }
+      ],
+      "calculations": [
         {
-          "id": "4",
-          "code": 500,
-          "temp": 666,
-          "wind": 33,
-          "pressure": 445
-        },
-        {
-          "id": "5",
-          "code": 22,
-          "temp": 888,
-          "wind": 2,
-          "pressure": 22344
+          "latestWeatherText": "Light Showers",
+          "readingUUID": "e8c528e0-2bba-11ed-aa76-05ea57250e46"
         }
       ]
     },
     {
-      "id": "2",
-      "name": "Galway",
+      "id": "b919a350-2bba-11ed-9bb7-95bae4271dcf",
+      "name": "test 2",
       "readings": [
         {
-          "id": "6",
-          "code": 13333330,
-          "temp": 66,
-          "wind": 33,
-          "pressure": 44
-        },
+          "code": "400",
+          "temp": "2",
+          "wind": "2",
+          "pressure": "2",
+          "id": "b1b8c3d0-2bbe-11ed-81a9-d3a1ea0607b3"
+        }
+      ],
+      "calculations": [
         {
-          "id": "7",
-          "code": 22,
-          "temp": 77,
-          "wind": 3333,
-          "pressure": 4765434
-        },
+          "latestWeatherText": "Light Showers",
+          "readingUUID": "b1b8c3d0-2bbe-11ed-81a9-d3a1ea0607b3"
+        }
+      ]
+    },
+    {
+      "id": "e1187020-2bba-11ed-a52e-3956070b7323",
+      "name": "test44",
+      "readings": [
         {
-          "id": "8",
-          "code": 4568,
-          "temp": 284,
-          "wind": 278,
-          "pressure": 395
+          "code": "400",
+          "temp": "300",
+          "wind": "3",
+          "pressure": "1",
+          "id": "002f4510-2bbb-11ed-a9ca-01a2680337e4"
+        }
+      ],
+      "calculations": [
+        {
+          "latestWeatherText": "Light Showers",
+          "readingUUID": "002f4510-2bbb-11ed-a9ca-01a2680337e4"
         }
       ]
     }
