@@ -3,84 +3,8 @@
 <section class="ui segment">
     {{#each data.stations}}
         <section class="ui segment">
-            <h3 class="ui header">{{name}}</h3>
-
-          <div class="ui five cards">
-            <div class="card">
-              <div class="content">
-                <i class="right floated huge purple marker icon"></i>
-                <br>
-                <div class="header">
-                  {{name}}
-                  <br>
-                </div>
-                <div class="meta">
-                </div>
-                <div class="description">
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="content">
-                <i class="right floated huge red ${reading.weatherCodeIcon}"></i>
-                <br>
-                <div class="header">
-                  Weather
-                </div>
-                <div class="meta">
-                </div>
-                <div class="description">
-                  {{#each readings}}{{#if @last}}{{code}}{{/if}}{{/each}}
-                  <br>
-                  {{calculations.0.latestWeatherText}}
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="content">
-                <i class="right floated huge blue temperature low icon"></i>
-                <br>
-                <div class="header">
-                  Temp
-                </div>
-                <div class="meta">
-                </div>
-                <div class="description">
-                  {{#each readings}}{{#if @last}}{{temp}}{{/if}}{{/each}} C
-                  <br>
-                  <i class="${station.temperatureTrendingValue}"></i>
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class=" content">
-                <i class="right floated huge teal wind icon"></i>
-                <br>
-                <div class="header">
-                  Wind
-                </div>
-                <div class="meta">
-                </div>
-                <div class="description">
-                  {{#each readings}}{{#if @last}}{{wind}}{{/if}}{{/each}}
-                </div>
-              </div>
-            </div>
-            <div class="card">
-              <div class="content">
-                <i class="right floated huge orange compress arrows alternate icon"></i>
-                <br>
-                <div class="header">
-                  Pressure
-                </div>
-                <div class="meta">
-                </div>
-                <div class="description">
-                  {{#each readings}}{{#if @last}}{{pressure}}{{/if}}{{/each}} hpa
-                </div>
-              </div>
-            </div>
-          </div>
+          <h3 class="ui header">{{name}}</h3>
+          {{> latestreading}}
           <br>
           <a href="/station/{{id}}" class="ui icon button"><i class="folder open outline icon"></i></a><a href="/dashboard/deletestation/{{id}}" class="ui icon button"><i class="icon trash"></i></a>
         </section>

@@ -9,6 +9,7 @@ class Calculations {
 
     this.latestWeatherText = latestWeatherText(reading.code, 'text');
     this.readingUUID = readingUUID;
+    this.fahrenheitTemp = setFahrenheitTemp(reading.temp);
 
   }
 }
@@ -58,6 +59,10 @@ const latestWeatherText = (code, selector) => {
   }else if(selector == 'icon'){
     return weatherCodeIcon;
   }
+}
+
+const setFahrenheitTemp = (temp) =>{
+  return (temp *((9*1.0)/5)) + 32;
 }
 
 module.exports = readingCalculations;

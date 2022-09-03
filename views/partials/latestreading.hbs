@@ -1,5 +1,3 @@
-
-
 <div class="ui five cards">
   <div class="card">
     <div class="content">
@@ -25,9 +23,9 @@
       <div class="meta">
       </div>
       <div class="description">
-        {{readings.0.code}}
-          display
-        {{../data.calculations.latestWeatherText}}
+        {{#each readings}}{{#if @last}}{{code}}{{/if}}{{/each}}
+        <br>
+        {{calculations.0.latestWeatherText}}
       </div>
     </div>
   </div>
@@ -41,7 +39,10 @@
       <div class="meta">
       </div>
       <div class="description">
-        {{readings.0.temp}} C<br>
+        {{#each readings}}{{#if @last}}{{temp}}{{/if}}{{/each}} C
+        <br>
+        {{calculations.0.fahrenheitTemp}} F
+        <br>
         <i class="${station.temperatureTrendingValue}"></i>
       </div>
     </div>
@@ -56,7 +57,7 @@
       <div class="meta">
       </div>
       <div class="description">
-        {{readings.0.wind}}
+        {{#each readings}}{{#if @last}}{{wind}}{{/if}}{{/each}}
       </div>
     </div>
   </div>
@@ -70,7 +71,7 @@
       <div class="meta">
       </div>
       <div class="description">
-        {{readings.0.pressure}} hpa
+        {{#each readings}}{{#if @last}}{{pressure}}{{/if}}{{/each}} hpa
       </div>
     </div>
   </div>

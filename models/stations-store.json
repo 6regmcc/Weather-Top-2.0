@@ -10,12 +10,20 @@
           "wind": "",
           "pressure": "33",
           "id": "e8c528e0-2bba-11ed-aa76-05ea57250e46"
+        },
+        {
+          "code": "400",
+          "temp": "33",
+          "wind": "33",
+          "pressure": "33",
+          "id": "f0395330-2bbf-11ed-9bcf-138a04e8bf14"
         }
       ],
       "calculations": [
         {
           "latestWeatherText": "Light Showers",
-          "readingUUID": "e8c528e0-2bba-11ed-aa76-05ea57250e46"
+          "readingUUID": "f0395330-2bbf-11ed-9bcf-138a04e8bf14",
+          "fahrenheitTemp": 91.4
         }
       ]
     },
@@ -34,7 +42,8 @@
       "calculations": [
         {
           "latestWeatherText": "Light Showers",
-          "readingUUID": "b1b8c3d0-2bbe-11ed-81a9-d3a1ea0607b3"
+          "readingUUID": "b1b8c3d0-2bbe-11ed-81a9-d3a1ea0607b3",
+          "fahrenheitTemp": 35.6
         }
       ]
     },
@@ -48,12 +57,20 @@
           "wind": "3",
           "pressure": "1",
           "id": "002f4510-2bbb-11ed-a9ca-01a2680337e4"
+        },
+        {
+          "code": "500",
+          "temp": "40",
+          "wind": "4",
+          "pressure": "1",
+          "id": "03353fd0-2bc0-11ed-92c8-85004de3ce9c"
         }
       ],
       "calculations": [
         {
-          "latestWeatherText": "Light Showers",
-          "readingUUID": "002f4510-2bbb-11ed-a9ca-01a2680337e4"
+          "latestWeatherText": "Heavy Showers",
+          "readingUUID": "03353fd0-2bc0-11ed-92c8-85004de3ce9c",
+          "fahrenheitTemp": 104
         }
       ]
     }
