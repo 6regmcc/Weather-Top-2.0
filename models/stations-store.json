@@ -24,6 +24,14 @@
           "windChill": "46.08"
         }
       ]
+    },
+    {
+      "id": "08f03cc0-2d57-11ed-8d7d-47252fba2b14",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "newStation",
+      "latitude": "123",
+      "longitude": "321",
+      "readings": []
     }
   ]
 }
