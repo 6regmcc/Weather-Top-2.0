@@ -28,6 +28,7 @@ const station = {
             code: request.body.code,
             temp: request.body.temperature,
             wind: request.body.windspeed,
+            windDirection: request.body.winddirection,
             pressure: request.body.pressure,
             id: uuid.v1(),
         };

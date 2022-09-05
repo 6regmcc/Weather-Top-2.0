@@ -1,76 +1,27 @@
 {
   "stationCollection": [
     {
-      "id": "b70f0640-2bba-11ed-b5a8-21a8817247d6",
-      "name": "test",
+      "id": "56b0bdd0-2d3a-11ed-8307-f3943329af27",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "Dublin",
       "readings": [
         {
-          "code": "400",
-          "temp": "3",
-          "wind": "",
-          "pressure": "33",
-          "id": "e8c528e0-2bba-11ed-aa76-05ea57250e46"
-        },
-        {
-          "code": "400",
-          "temp": "33",
-          "wind": "33",
-          "pressure": "33",
-          "id": "f0395330-2bbf-11ed-9bcf-138a04e8bf14"
-        }
-      ],
-      "calculations": [
-        {
-          "latestWeatherText": "Light Showers",
-          "readingUUID": "f0395330-2bbf-11ed-9bcf-138a04e8bf14",
-          "fahrenheitTemp": 91.4
-        }
-      ]
-    },
-    {
-      "id": "b919a350-2bba-11ed-9bb7-95bae4271dcf",
-      "name": "test 2",
-      "readings": [
-        {
-          "code": "400",
-          "temp": "2",
-          "wind": "2",
-          "pressure": "2",
-          "id": "b1b8c3d0-2bbe-11ed-81a9-d3a1ea0607b3"
-        }
-      ],
-      "calculations": [
-        {
-          "latestWeatherText": "Light Showers",
-          "readingUUID": "b1b8c3d0-2bbe-11ed-81a9-d3a1ea0607b3",
-          "fahrenheitTemp": 35.6
-        }
-      ]
-    },
-    {
-      "id": "e1187020-2bba-11ed-a52e-3956070b7323",
-      "name": "test44",
-      "readings": [
-        {
-          "code": "400",
-          "temp": "300",
-          "wind": "3",
-          "pressure": "1",
-          "id": "002f4510-2bbb-11ed-a9ca-01a2680337e4"
-        },
-        {
-          "code": "500",
+          "code": "600",
           "temp": "40",
-          "wind": "4",
-          "pressure": "1",
-          "id": "03353fd0-2bc0-11ed-92c8-85004de3ce9c"
+          "wind": "40",
+          "windDirection": "300",
+          "pressure": "1000",
+          "id": "5f735360-2d3a-11ed-b60a-cbe2d8966363"
         }
       ],
       "calculations": [
         {
-          "latestWeatherText": "Heavy Showers",
-          "readingUUID": "03353fd0-2bc0-11ed-92c8-85004de3ce9c",
-          "fahrenheitTemp": 104
+          "latestWeatherText": "Rain",
+          "readingUUID": "5f735360-2d3a-11ed-b60a-cbe2d8966363",
+          "fahrenheitTemp": 104,
+          "cardinalPoint": "West-Northwest",
+          "beaufort": 6,
+          "windChill": "46.08"
         }
       ]
     }

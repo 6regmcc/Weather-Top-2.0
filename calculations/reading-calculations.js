@@ -10,7 +10,9 @@ class Calculations {
     this.latestWeatherText = latestWeatherText(reading.code, 'text');
     this.readingUUID = readingUUID;
     this.fahrenheitTemp = setFahrenheitTemp(reading.temp);
-
+    this.cardinalPoint = setCardinalPoint(reading.windDirection);
+    this.beaufort = setBeaufort(reading.wind);
+    this.windChill = setWindChill(reading.temp, reading.wind);
   }
 }
 
@@ -63,6 +65,78 @@ const latestWeatherText = (code, selector) => {
 
 const setFahrenheitTemp = (temp) =>{
   return (temp *((9*1.0)/5)) + 32;
+}
+
+const setCardinalPoint = (windDirection) => {
+  let cardinalPoint;
+  if (windDirection > 348.75 || windDirection < 11.25){
+    cardinalPoint = "North";
+  }else if (windDirection > 11.25 && windDirection < 33.75){
+    cardinalPoint = "North-Northeast";
+  }else if (windDirection > 33.75 && windDirection < 56.25){
+    cardinalPoint = "Northeast";
+  }else if (windDirection > 56.25 && windDirection < 78.75){
+    cardinalPoint = "East-Northeast";
+  }else if (windDirection > 78.75 && windDirection < 101.25){
+    cardinalPoint = "East";
+  }else if (windDirection > 101.25 && windDirection < 123.75){
+    cardinalPoint = "East-Southeast";
+  }else if (windDirection > 123.75 && windDirection < 146.25){
+    cardinalPoint = "Southeast";
+  }else if (windDirection > 146.25 && windDirection < 168.75){
+    cardinalPoint = "South-Southeast";
+  }else if (windDirection > 168.75 && windDirection < 191.25){
+    cardinalPoint = "South";
+  }else if (windDirection > 191.25 && windDirection < 213.75){
+    cardinalPoint = "South-Southwest";
+  }else if (windDirection > 213.75 && windDirection < 236.25){
+    cardinalPoint = "Southwest";
+  }else if (windDirection > 236.25 && windDirection < 258.75){
+    cardinalPoint = "West-Southwest";
+  }else if (windDirection > 258.75 && windDirection < 281.25){
+    cardinalPoint = "West";
+  }else if (windDirection > 281.25 && windDirection < 303.75){
+    cardinalPoint = "West-Northwest";
+  }else if (windDirection > 303.75 && windDirection < 326.25){
+    cardinalPoint = "Northwest";
+  }else if (windDirection > 326.25 && windDirection < 384.75 ){
+    cardinalPoint = "North-Northwest";
+  }
+  return cardinalPoint;
+}
+
+const setWindChill = (temperature, windSpeed) => {
+  return (13.12 + (0.6215 * temperature) - (11.37 * Math.pow(windSpeed, 0.16)) + ((0.3965 * temperature) * (Math.pow(windSpeed, 0.16)))).toFixed(2);
+}
+
+const setBeaufort = (windSpeed) => {
+  let beaufort;
+  if(windSpeed <=1){
+    beaufort = 0;
+  } else if(windSpeed <=5){
+    beaufort = 1;
+  } else if(windSpeed <=11){
+    beaufort = 2;
+  } else if(windSpeed <=19){
+    beaufort = 3;
+  } else if(windSpeed <=28){
+    beaufort = 4;
+  } else if(windSpeed <=38){
+    beaufort = 5;
+  } else if(windSpeed <=49){
+    beaufort = 6;
+  } else if(windSpeed <=61){
+    beaufort = 7;
+  } else if(windSpeed <=74){
+    beaufort = 8;
+  } else if(windSpeed <=88){
+    beaufort = 9;
+  } else if(windSpeed <=102){
+    beaufort = 10;
+  } else if(windSpeed <=117){
+    beaufort = 11;
+  }
+  return beaufort;
 }
 
 module.exports = readingCalculations;

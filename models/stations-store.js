@@ -54,6 +54,9 @@ const stationStore = {
         this.store.add(this.collection, station);
         this.store.save();
     },
+    getUserStations(userid) {
+        return this.store.findBy(this.collection, { userid: userid });
+    },
 };
 
 module.exports = stationStore;

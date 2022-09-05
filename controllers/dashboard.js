@@ -4,15 +4,18 @@ const logger = require("../utils/logger");
 const stationStore = require("../models/stations-store");
 const calculations = require("../calculations/reading-calculations");
 const uuid = require('uuid');
+const accounts = require ('./accounts.js');
 
 
 const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
+    const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
       title: "Weathertop 2.0",
+
       data: {
-        stations: stationStore.getAllStations(),
+        stations: stationStore.getUserStations(loggedInUser.id),
       },
 
     };
@@ -28,8 +31,10 @@ const dashboard = {
     response.redirect('/dashboard');
   },
   addStation(request, response) {
+    const loggedInUser = accounts.getCurrentUser(request);
     const newStation = {
       id: uuid.v1(),
+      userid: loggedInUser.id,
       name: request.body.name,
       readings: [],
 

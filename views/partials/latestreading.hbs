@@ -57,7 +57,11 @@
       <div class="meta">
       </div>
       <div class="description">
-        {{#each readings}}{{#if @last}}{{wind}}{{/if}}{{/each}}
+        {{calculations.0.beaufort}} bft
+        <br>
+        {{calculations.0.cardinalPoint}}
+        <br>
+        Feels Like {{calculations.0.windChill}}
       </div>
     </div>
   </div>
