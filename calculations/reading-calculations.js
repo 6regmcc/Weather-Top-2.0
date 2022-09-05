@@ -21,7 +21,26 @@ const readingCalculations = {
   returnCalculations(reading ,readingUUID){
     return new Calculations(reading, readingUUID);
 
-  }
+  },
+  findMinMaxValues(arr, ...properties ){
+    let propertiesArr = [...properties];
+    console.log(propertiesArr);
+    let returnValues = {};
+    propertiesArr.forEach(prop =>{
+      let min = arr[0][prop];
+      let max = arr[0][prop];
+
+      arr.forEach(obj =>{
+        if (obj[prop] < min){min = obj[prop]}
+        if (obj[prop] > max){max = obj[prop]}
+        console.log(obj);
+      })
+      returnValues[`Min-${prop}`] = min;
+      returnValues[`Max-${prop}`] = max;
+    })
+    return returnValues;
+  },
+
 
 }
 const latestWeatherText = (code, selector) => {
@@ -138,6 +157,31 @@ const setBeaufort = (windSpeed) => {
   }
   return beaufort;
 }
+
+const findMinValue = (arr, property) => {
+  let minValue = arr[0].property;
+  arr.forEach(obj => {
+    if(obj.property < minValue){
+      minValue = obj.property;}
+  })
+  return minValue;
+}
+
+const findMaxValue = (arr, property) => {
+  let maxValue = arr[0].property;
+  arr.forEach(obj => {
+    if(obj.property < maxValue){
+      maxValue = obj.property;}
+  })
+  return maxValue;
+}
+
+
+
+const print = () => {
+  console.log('this is running why?')
+}
+
 
 module.exports = readingCalculations;
 

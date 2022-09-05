@@ -1,4 +1,5 @@
 'use strict';
+const logger = require("../utils/logger");
 const _ = require('lodash');
 const JsonStore = require('./json-store');
 const readingCalculations = require('../calculations/reading-calculations')
@@ -12,7 +13,11 @@ const stationStore = {
 
     getAllStations() {
         let stations = this.store.findAll(this.collection);
+
         for(let i = 0;i < stations.length;i++){
+            stations[i].minMaxValues = [];
+            stations[i].minMaxValues.push(readingCalculations.findMinMaxValues(stations[i].readings, "wind","temp","pressure"))
+            this.store.save();
             let latestReading = stations[i].readings[stations[i].readings.length - 1];
             if(latestReading){
                 stations[i].calculations = [];
@@ -43,11 +48,13 @@ const stationStore = {
 
     addReading(id, reading, readingUUID) {
         const station = this.getStation(id);
-        let calculations = readingCalculations.returnCalculations(reading, readingUUID)
+        //let calculations = readingCalculations.returnCalculations(reading, readingUUID)
         station.readings.push(reading);
-        station.calculations = []
-        station.calculations.push(calculations);
+        //station.calculations = []
+        //station.calculations.push(calculations);
+        this.updateAllCalculationsAndMinMaxValues([station]);
         this.store.save();
+
 
     },
     addStation(station) {
@@ -55,8 +62,24 @@ const stationStore = {
         this.store.save();
     },
     getUserStations(userid) {
-        return this.store.findBy(this.collection, { userid: userid });
+        let stations = this.store.findBy(this.collection, { userid: userid });
+        this.updateAllCalculationsAndMinMaxValues(stations);
+        return stations;
+    },
+    updateAllCalculationsAndMinMaxValues(stations){
+        for(let i = 0;i < stations.length;i++){
+            let latestReading = stations[i].readings[stations[i].readings.length - 1];
+            if(latestReading){
+                stations[i].calculations = [];
+                stations[i].calculations.push(readingCalculations.returnCalculations(latestReading, latestReading.id));
+                stations[i].minMaxValues = [];
+                stations[i].minMaxValues.push(readingCalculations.findMinMaxValues(stations[i].readings, "wind","temp","pressure"))
+                this.store.save();
+            }
+        }
     },
 };
+
+
 
 module.exports = stationStore;
