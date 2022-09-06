@@ -24,16 +24,13 @@ const readingCalculations = {
   },
   findMinMaxValues(arr, ...properties ){
     let propertiesArr = [...properties];
-    console.log(propertiesArr);
     let returnValues = {};
-    propertiesArr.forEach(prop =>{
+    propertiesArr.forEach(prop => {
       let min = arr[0][prop];
       let max = arr[0][prop];
-
-      arr.forEach(obj =>{
+      arr.forEach(obj => {
         if (obj[prop] < min){min = obj[prop]}
         if (obj[prop] > max){max = obj[prop]}
-        console.log(obj);
       })
       returnValues[`Min-${prop}`] = min;
       returnValues[`Max-${prop}`] = max;
@@ -120,6 +117,8 @@ const setCardinalPoint = (windDirection) => {
     cardinalPoint = "Northwest";
   }else if (windDirection > 326.25 && windDirection < 384.75 ){
     cardinalPoint = "North-Northwest";
+  }else{
+    cardinalPoint = "Something went wrong";
   }
   return cardinalPoint;
 }
@@ -132,7 +131,7 @@ const setBeaufort = (windSpeed) => {
   let beaufort;
   if(windSpeed <=1){
     beaufort = 0;
-  } else if(windSpeed <=5){
+  } else if(windSpeed >0 && windSpeed <=5){
     beaufort = 1;
   } else if(windSpeed <=11){
     beaufort = 2;
@@ -154,6 +153,10 @@ const setBeaufort = (windSpeed) => {
     beaufort = 10;
   } else if(windSpeed <=117){
     beaufort = 11;
+  } else if(windSpeed >=118){
+    beaufort = 12;
+  } else{
+    beaufort = "Something went wrong";
   }
   return beaufort;
 }

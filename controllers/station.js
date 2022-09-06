@@ -11,6 +11,10 @@ const station = {
         const viewData = {
             title: 'Station',
             station: stationStore.getStation(stationId),
+            data: {
+                stations: [stationStore.getStation(stationId)]
+            }
+
         };
         response.render('station', viewData);
     },

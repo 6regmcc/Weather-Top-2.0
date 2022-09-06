@@ -11,9 +11,14 @@
       <div class="meta">
       </div>
       <div class="description">
-        Lat {{latitude}}
+        {{#if latitude}}
+          Lat {{latitude}}
+        {{/if}}
         <br>
-        Long {{longitude}}
+        {{#if longitude}}
+          Long {{longitude}}
+        {{/if}}
+
       </div>
     </div>
   </div>
@@ -29,7 +34,7 @@
       <div class="description">
         {{#each readings}}{{#if @last}}{{code}}{{/if}}{{/each}}
         <br>
-        {{calculations.0.latestWeatherText}}
+        {{calculations.latestWeatherText}}
       </div>
     </div>
   </div>
@@ -43,9 +48,19 @@
       <div class="meta">
       </div>
       <div class="description">
-        {{#each readings}}{{#if @last}}{{temp}}{{/if}}{{/each}} C
+        {{#each readings}}
+          {{#if @last}}
+            {{#if temp}}
+              {{temp}} C
+            {{/if}}
+          {{/if}}
+        {{/each}}
         <br>
-        {{calculations.0.fahrenheitTemp}} F
+        {{#if calculations.fahrenheitTemp}}
+          {{calculations.fahrenheitTemp}} F
+        {{/if}}
+        <br>
+
         <br>
         <i class="${station.temperatureTrendingValue}"></i>
       </div>
@@ -61,11 +76,16 @@
       <div class="meta">
       </div>
       <div class="description">
-        {{calculations.0.beaufort}} bft
+        {{#if calculations.beaufort}}
+          {{calculations.beaufort}} bft
+        {{/if}}
         <br>
-        {{calculations.0.cardinalPoint}}
+        {{calculations.cardinalPoint}}
         <br>
-        Feels Like {{calculations.0.windChill}}
+        {{#if calculations.windChill}}
+          Feels Like {{calculations.windChill}}
+        {{/if}}
+
       </div>
     </div>
   </div>
@@ -79,7 +99,13 @@
       <div class="meta">
       </div>
       <div class="description">
-        {{#each readings}}{{#if @last}}{{pressure}}{{/if}}{{/each}} hpa
+        {{#each readings}}
+          {{#if @last}}
+            {{#if pressure}}
+              {{pressure}} hpa
+            {{/if}}
+          {{/if}}
+        {{/each}}
       </div>
     </div>
   </div>

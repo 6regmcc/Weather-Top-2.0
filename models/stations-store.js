@@ -34,9 +34,8 @@ const stationStore = {
     removeReading(id, readingId) {
         const station = this.getStation(id);
         const readings = station.readings;
-        const calculations = station.calculations;
         _.remove(readings, { id: readingId});
-        _.remove(calculations, { readingUUID: readingId});
+        this.updateAllCalculationsAndMinMaxValues([station]);
         this.store.save();
     },
 
@@ -70,10 +69,12 @@ const stationStore = {
         for(let i = 0;i < stations.length;i++){
             let latestReading = stations[i].readings[stations[i].readings.length - 1];
             if(latestReading){
-                stations[i].calculations = [];
-                stations[i].calculations.push(readingCalculations.returnCalculations(latestReading, latestReading.id));
-                stations[i].minMaxValues = [];
-                stations[i].minMaxValues.push(readingCalculations.findMinMaxValues(stations[i].readings, "wind","temp","pressure"))
+                stations[i].calculations = readingCalculations.returnCalculations(latestReading, latestReading.id);
+                stations[i].minMaxValues = readingCalculations.findMinMaxValues(stations[i].readings, "wind","temp","pressure");
+                this.store.save();
+            }else{
+                stations[i].calculations = {};
+                stations[i].minMaxValues = {};
                 this.store.save();
             }
         }

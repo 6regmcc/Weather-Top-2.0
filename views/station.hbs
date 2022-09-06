@@ -1,5 +1,7 @@
 {{> menu}}
-
+{{#each data.stations}}
+  {{>  latestreading}}
+{{/each}}
 <section class="ui segment">
     <h2 class="ui header">
         {{station.name}}

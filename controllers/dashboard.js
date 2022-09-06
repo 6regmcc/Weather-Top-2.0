@@ -13,7 +13,6 @@ const dashboard = {
     const loggedInUser = accounts.getCurrentUser(request);
     const viewData = {
       title: "Weathertop 2.0",
-
       data: {
         stations: stationStore.getUserStations(loggedInUser.id),
       },
@@ -26,7 +25,6 @@ const dashboard = {
   deleteStation(request, response) {
     const stationId = request.params.id;
     logger.debug(`Deleting Station ${stationId}`);
-    console.log('this is running');
     stationStore.removeStation(stationId);
     response.redirect('/dashboard');
   },

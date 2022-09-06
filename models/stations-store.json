@@ -31,68 +31,52 @@
       "name": "test station",
       "latitude": "asdf",
       "longitude": "asdf",
+      "readings": [],
+      "calculations": {},
+      "minMaxValues": {}
+    },
+    {
+      "id": "8111a960-2df1-11ed-843b-555722c5d09c",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Dublin",
+      "latitude": "123",
+      "longitude": "123",
       "readings": [
         {
-          "code": "100",
-          "temp": "234",
-          "wind": "234",
-          "windDirection": "324",
-          "pressure": "234r",
-          "id": "a4273690-2d6a-11ed-9df5-45fa1868cfe2"
-        },
-        {
-          "code": "266",
-          "temp": "4",
-          "wind": "4",
-          "windDirection": "4",
-          "pressure": "2",
-          "id": "a960f380-2d6a-11ed-95aa-35425ed11d2a"
-        },
-        {
-          "code": "234",
-          "temp": "444",
-          "wind": "42",
-          "windDirection": "1",
-          "pressure": "4",
-          "id": "ae4404f0-2d6a-11ed-ba89-13a1e2d6a9c3"
-        },
-        {
           "code": "300",
-          "temp": "f",
-          "wind": "4",
-          "windDirection": "4",
-          "pressure": "sdf",
-          "id": "03c99b30-2d6e-11ed-837f-dbc99b998ab7"
-        },
-        {
-          "code": "100",
-          "temp": "100",
+          "temp": "456",
           "wind": "100",
-          "windDirection": "100",
-          "pressure": "100",
-          "id": "eb3e0210-2d70-11ed-bb02-2fa2f111152e"
+          "windDirection": "123",
+          "pressure": "123",
+          "id": "4309d2d0-2df8-11ed-9760-572d0d2b6a74"
         }
       ],
-      "calculations": [
-        {
-          "latestWeatherText": "Clear",
-          "readingUUID": "eb3e0210-2d70-11ed-bb02-2fa2f111152e",
-          "fahrenheitTemp": 212,
-          "cardinalPoint": "East",
-          "beaufort": 10,
-          "windChill": "134.36"
-        }
-      ],
-      "minMaxValues": [
-        {
-          "Min-wind": "100",
-          "Max-wind": "42",
-          "Min-temp": "100",
-          "Max-temp": "f",
-          "Min-pressure": "100",
-          "Max-pressure": "sdf"
-        }
-      ]
+      "calculations": {
+        "latestWeatherText": "Cloudy",
+        "readingUUID": "4309d2d0-2df8-11ed-9760-572d0d2b6a74",
+        "fahrenheitTemp": 852.8000000000001,
+        "cardinalPoint": "East-Southeast",
+        "beaufort": 10,
+        "windChill": "650.52"
+      },
+      "minMaxValues": {
+        "Min-wind": "100",
+        "Max-wind": "100",
+        "Min-temp": "456",
+        "Max-temp": "456",
+        "Min-pressure": "123",
+        "Max-pressure": "123"
+      }
+    },
+    {
+      "id": "62b3ec70-2e0b-11ed-905b-3f0e431cabf7",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "new station",
+      "latitude": "123",
+      "longitude": "123",
+      "readings": [],
+      "calculations": {},
+      "minMaxValues": {}
     }
   ]
 }
