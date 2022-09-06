@@ -60,6 +60,13 @@
           {{calculations.fahrenheitTemp}} F
         {{/if}}
         <br>
+        {{#if minMaxValues.Min-temp}}
+          Min {{minMaxValues.Min-temp}} C
+        {{/if}}
+        <br>
+        {{#if minMaxValues.Max-temp}}
+          Max {{minMaxValues.Max-temp}} C
+        {{/if}}
 
         <br>
         <i class="${station.temperatureTrendingValue}"></i>
@@ -83,8 +90,17 @@
         {{calculations.cardinalPoint}}
         <br>
         {{#if calculations.windChill}}
-          Feels Like {{calculations.windChill}}
+          Feels Like {{calculations.windChill}} C
         {{/if}}
+        <br>
+        {{#if minMaxValues.Min-wind}}
+          Min {{minMaxValues.Min-wind}}
+        {{/if}}
+        <br>
+        {{#if minMaxValues.Max-wind}}
+          Max {{minMaxValues.Max-wind}}
+        {{/if}}
+
 
       </div>
     </div>
@@ -106,6 +122,14 @@
             {{/if}}
           {{/if}}
         {{/each}}
+        <br>
+        {{#if minMaxValues.Min-pressure}}
+          Min {{minMaxValues.Min-pressure}} hpa
+        {{/if}}
+        <br>
+        {{#if minMaxValues.Max-pressure}}
+          Max {{minMaxValues.Max-pressure}} hpa
+        {{/if}}
       </div>
     </div>
   </div>

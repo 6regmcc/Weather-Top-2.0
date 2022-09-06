@@ -18,22 +18,22 @@
         {
           "latestWeatherText": "Rain",
           "readingUUID": "5f735360-2d3a-11ed-b60a-cbe2d8966363",
-          "fahrenheitTemp": 104,
+          "fahrenheitTemp": "104.00",
           "cardinalPoint": "West-Northwest",
           "beaufort": 6,
           "windChill": "46.08"
         }
+      ],
+      "minMaxValues": [
+        {
+          "Min-wind": "40",
+          "Max-wind": "40",
+          "Min-temp": "40",
+          "Max-temp": "40",
+          "Min-pressure": "1000",
+          "Max-pressure": "1000"
+        }
       ]
-    },
-    {
-      "id": "9ca20300-2d6a-11ed-a274-01855c66e8cc",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "name": "test station",
-      "latitude": "asdf",
-      "longitude": "asdf",
-      "readings": [],
-      "calculations": {},
-      "minMaxValues": {}
     },
     {
       "id": "8111a960-2df1-11ed-843b-555722c5d09c",
@@ -44,36 +44,68 @@
       "readings": [
         {
           "code": "300",
-          "temp": "456",
-          "wind": "100",
-          "windDirection": "123",
+          "temp": "123.00",
+          "wind": "123",
+          "windDirection": "132",
           "pressure": "123",
-          "id": "4309d2d0-2df8-11ed-9760-572d0d2b6a74"
+          "id": "d42a1160-2e0e-11ed-aeb8-49485a8f0e4c"
+        },
+        {
+          "code": "100",
+          "temp": "23.00",
+          "wind": "30",
+          "windDirection": "234",
+          "pressure": "234",
+          "id": "6256a5b0-2e15-11ed-bb37-cbe296a4523c"
+        },
+        {
+          "code": "400",
+          "temp": "4.00",
+          "wind": "1",
+          "windDirection": "234",
+          "pressure": "234",
+          "id": "9614f460-2e15-11ed-806a-735a1d5999ea"
+        },
+        {
+          "code": "300",
+          "temp": "4.00",
+          "wind": "234",
+          "windDirection": "24",
+          "pressure": "345345345",
+          "id": "9cee0970-2e15-11ed-af19-a94268c2d713"
+        },
+        {
+          "code": "200",
+          "temp": "234.00",
+          "wind": "4",
+          "windDirection": "234",
+          "pressure": "35",
+          "id": "aa6107b0-2e15-11ed-b4ac-671c3dfc0905"
         }
       ],
       "calculations": {
-        "latestWeatherText": "Cloudy",
-        "readingUUID": "4309d2d0-2df8-11ed-9760-572d0d2b6a74",
-        "fahrenheitTemp": 852.8000000000001,
-        "cardinalPoint": "East-Southeast",
-        "beaufort": 10,
-        "windChill": "650.52"
+        "latestWeatherText": "Partial clouds",
+        "readingUUID": "aa6107b0-2e15-11ed-b4ac-671c3dfc0905",
+        "fahrenheitTemp": "453.20",
+        "cardinalPoint": "Southwest",
+        "beaufort": 1,
+        "windChill": "260.18"
       },
       "minMaxValues": {
-        "Min-wind": "100",
-        "Max-wind": "100",
-        "Min-temp": "456",
-        "Max-temp": "456",
-        "Min-pressure": "123",
-        "Max-pressure": "123"
+        "Min-wind": 1,
+        "Max-wind": 234,
+        "Min-temp": 4,
+        "Max-temp": 234,
+        "Min-pressure": 35,
+        "Max-pressure": 345345345
       }
     },
     {
-      "id": "62b3ec70-2e0b-11ed-905b-3f0e431cabf7",
+      "id": "70486650-2e14-11ed-a588-013169c3c61e",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "name": "new station",
-      "latitude": "123",
-      "longitude": "123",
+      "name": "galway",
+      "latitude": "234",
+      "longitude": "345",
       "readings": [],
       "calculations": {},
       "minMaxValues": {}

@@ -30,7 +30,7 @@ const station = {
         const station = stationStore.getStation(stationId);
         const newReading = {
             code: request.body.code,
-            temp: request.body.temperature,
+            temp: parseFloat(request.body.temperature).toFixed(2),
             wind: request.body.windspeed,
             windDirection: request.body.winddirection,
             pressure: request.body.pressure,

@@ -23,20 +23,22 @@ const readingCalculations = {
 
   },
   findMinMaxValues(arr, ...properties ){
-    let propertiesArr = [...properties];
-    let returnValues = {};
-    propertiesArr.forEach(prop => {
-      let min = arr[0][prop];
-      let max = arr[0][prop];
-      arr.forEach(obj => {
-        if (obj[prop] < min){min = obj[prop]}
-        if (obj[prop] > max){max = obj[prop]}
-      })
-      returnValues[`Min-${prop}`] = min;
-      returnValues[`Max-${prop}`] = max;
+  let propertiesArr = [...properties];
+  console.log(propertiesArr);
+  let returnValues = {};
+  propertiesArr.forEach(prop =>{
+    let min = parseInt(arr[0][prop]);
+    let max = parseInt(arr[0][prop]);
+
+    arr.forEach(obj =>{
+      if (parseInt(obj[prop]) < min){min = parseInt(obj[prop])}
+      if (parseInt(obj[prop]) > max){max = parseInt(obj[prop])}
     })
-    return returnValues;
-  },
+    returnValues[`Min-${prop}`] = min;
+    returnValues[`Max-${prop}`] = max;
+  })
+  return returnValues;
+},
 
 
 }
@@ -80,7 +82,7 @@ const latestWeatherText = (code, selector) => {
 }
 
 const setFahrenheitTemp = (temp) =>{
-  return (temp *((9*1.0)/5)) + 32;
+  return ((temp *((9*1.0)/5)) + 32).toFixed(2);
 }
 
 const setCardinalPoint = (windDirection) => {
@@ -129,7 +131,7 @@ const setWindChill = (temperature, windSpeed) => {
 
 const setBeaufort = (windSpeed) => {
   let beaufort;
-  if(windSpeed <=1){
+  if(windSpeed <=0){
     beaufort = 0;
   } else if(windSpeed >0 && windSpeed <=5){
     beaufort = 1;
