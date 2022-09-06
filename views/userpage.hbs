@@ -1,0 +1,44 @@
+{{> menu id="user"}}
+<div class="ui segment">
+  <table class="ui definition table">
+    <h3>Logged in User details</h3>
+    <tbody>
+    <tr>
+      <td>First Name</td>
+      <td>{{user.firstName}}</td>
+    </tr>
+    <tr>
+      <td>Last Name</td>
+      <td>{{user.lastName}}</td>
+
+    </tr>
+    <tr>
+      <td>Email Address</td>
+      <td>{{user.email}}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>
+
+<form class="ui stacked segment form" action="user/{{user.id}}/updateuser" method="POST">
+  <h3>Complete form to update user details </h3>
+  <div class="one field">
+    <div class="field">
+      <label>Email Address</label>
+      <input type="email" placeholder="Email" name="email">
+    </div>
+  </div>
+  <div class="field">
+    <label>Password</label>
+    <input type="password" name="password">
+  </div>
+  <div class="field">
+    <label>First name</label>
+    <input type="text" placeholder="First Name" name="firstname">
+  </div>
+  <div class="field">
+    <label>Last name</label>
+    <input type="text" placeholder="Last Name" name="lastname">
+  </div>
+  <button class="floating right ui blue submit button">Update User</button>
+</form>
