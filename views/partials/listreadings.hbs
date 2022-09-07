@@ -2,6 +2,7 @@
 
     <thead>
     <tr>
+        <th>Time</th>
         <th>Code</th>
         <th>Temp</th>
         <th>Wind Speed</th>
@@ -13,6 +14,9 @@
     <tbody>
     {{#each station.readings}}
         <tr>
+            <td>
+                {{getLocalTime time}}
+            </td>
             <td>
                 {{code}}
             </td>

@@ -5,16 +5,18 @@ const stationStore = require("../models/stations-store");
 const calculations = require("../calculations/reading-calculations");
 const uuid = require('uuid');
 const accounts = require ('./accounts.js');
+const _ = require('lodash');
 
 
 const dashboard = {
   index(request, response) {
     logger.info("dashboard rendering");
     const loggedInUser = accounts.getCurrentUser(request);
+    const stations = stationStore.getUserStations(loggedInUser.id);
     const viewData = {
       title: "Weathertop 2.0",
       data: {
-        stations: stationStore.getUserStations(loggedInUser.id),
+        stations: stations.sort((a, b) => a.name.localeCompare(b.name)),
       },
 
     };

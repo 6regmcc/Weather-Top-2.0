@@ -4,6 +4,11 @@ const logger = require('../utils/logger');
 const stationStore = require('../models/stations-store');
 const uuid = require('uuid');
 
+
+
+
+
+
 const station = {
     index(request, response) {
         const stationId = request.params.id;
@@ -35,12 +40,14 @@ const station = {
             windDirection: request.body.winddirection,
             pressure: request.body.pressure,
             id: uuid.v1(),
+            time: new Date(),
         };
 
         logger.debug('New Reading  = ', newReading);
         stationStore.addReading(stationId, newReading, newReading.id );
         response.redirect('/station/' + stationId);
     },
+
 };
 
 module.exports = station;
