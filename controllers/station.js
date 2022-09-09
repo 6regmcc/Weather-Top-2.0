@@ -13,15 +13,19 @@ const axios = require('axios');
 const station = {
     index(request, response) {
         const stationId = request.params.id;
+        const stationReadings = stationStore.getStation(stationId).readings;
         logger.info('Station id = ' + stationId);
         const viewData = {
             title: 'Station',
             station: stationStore.getStation(stationId),
+
             data: {
-                stations: [stationStore.getStation(stationId)]
+                stations: [stationStore.getStation(stationId)],
+                trendData: stationStore.getTrendData('temp', stationReadings),
             }
 
         };
+        console.log(viewData.trendData);
         response.render('station', viewData);
     },
     deleteReading(request, response) {
@@ -61,12 +65,13 @@ const station = {
             const reading = result.data;
             console.log(reading);
 
-            report.code = reading.weather[0].id;
-            report.temp = reading.main.temp;
-            report.wind = reading.wind.speed;
-            report.pressure = reading.main.pressure;
-            report.windDirection = reading.wind.deg;
+            report.code = `${reading.weather[0].id}`;
+            report.temp = `${reading.main.temp}`;
+            report.wind = `${reading.wind.speed}`;
+            report.pressure = `${reading.main.pressure}`;
+            report.windDirection = `${reading.wind.deg}`;
             report.time = new Date();
+            report.id = uuid.v1(),
 
             stationStore.addReading(stationId, report,)
 

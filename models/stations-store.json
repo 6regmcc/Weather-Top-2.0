@@ -140,65 +140,57 @@
       "longitude": "234",
       "readings": [
         {
+          "code": "804",
+          "temp": "18.76",
+          "wind": "3.81",
+          "pressure": "1012",
+          "windDirection": "338",
+          "time": "2022-09-09T15:12:34.246Z",
+          "id": "d5012660-3051-11ed-afc2-6d577257f412"
+        },
+        {
+          "code": "804",
+          "temp": "18.76",
+          "wind": "3.81",
+          "pressure": "1012",
+          "windDirection": "338",
+          "time": "2022-09-09T15:12:38.356Z",
+          "id": "d7744940-3051-11ed-8adc-f5d9d73af1e7"
+        },
+        {
           "code": "300",
-          "temp": "1.00",
-          "wind": "3",
+          "temp": "23.00",
+          "wind": "2",
+          "windDirection": "345",
+          "pressure": "132",
+          "id": "baad8c90-3056-11ed-8c78-41bb0e6416e2",
+          "time": "2022-09-09T15:47:37.562Z"
+        },
+        {
+          "code": "200",
+          "temp": "3.00",
+          "wind": "234",
           "windDirection": "234",
           "pressure": "234",
-          "id": "0e016eb0-2efa-11ed-a6be-ef9f003596ba",
-          "time": "2022-09-07T22:11:43.003Z"
-        },
-        {
-          "code": "300",
-          "temp": "123.00",
-          "wind": "4234",
-          "windDirection": "345",
-          "pressure": "234345",
-          "id": "b80f8870-2efe-11ed-9ba6-5f91c99a60f5",
-          "time": "2022-09-07T22:45:06.295Z"
-        },
-        {
-          "code": "800",
-          "temp": "34.00",
-          "wind": "34",
-          "windDirection": "45",
-          "pressure": "1000",
-          "id": "e03b8a40-2fc3-11ed-b9d9-b9ad1f69cdf3",
-          "time": "2022-09-08T22:16:24.548Z"
-        },
-        {
-          "code": 804,
-          "temp": 12.34,
-          "wind": 1.79,
-          "pressure": 1007,
-          "windDirection": 339,
-          "time": "2022-09-08T22:34:49.789Z"
-        },
-        {
-          "code": "",
-          "temp": "NaN",
-          "wind": "",
-          "windDirection": "",
-          "pressure": "",
-          "id": "a4987b80-2fc6-11ed-b04e-65397592e356",
-          "time": "2022-09-08T22:36:12.985Z"
+          "id": "c2837830-3056-11ed-ad2e-75a72f6a7f74",
+          "time": "2022-09-09T15:47:50.708Z"
         }
       ],
       "calculations": {
-        "latestWeatherText": "invalid code",
-        "readingUUID": "a4987b80-2fc6-11ed-b04e-65397592e356",
-        "fahrenheitTemp": "NaN",
-        "cardinalPoint": "North",
-        "beaufort": 0,
-        "windChill": "NaN"
+        "latestWeatherText": "Partial clouds",
+        "readingUUID": "c2837830-3056-11ed-ad2e-75a72f6a7f74",
+        "fahrenheitTemp": "37.40",
+        "cardinalPoint": "Southwest",
+        "beaufort": 12,
+        "windChill": "-9.38"
       },
       "minMaxValues": {
-        "Min-wind": 1,
-        "Max-wind": 4234,
-        "Min-temp": 1,
-        "Max-temp": 123,
-        "Min-pressure": 234,
-        "Max-pressure": 234345
+        "Min-wind": 2,
+        "Max-wind": 234,
+        "Min-temp": 3,
+        "Max-temp": 23,
+        "Min-pressure": 132,
+        "Max-pressure": 1012
       }
     }
   ]

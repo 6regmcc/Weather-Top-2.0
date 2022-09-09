@@ -64,7 +64,26 @@ const stationStore = {
                 this.store.save();
             }
         }
+
     },
+    getTrendData(key, readings){
+        let trendData = {
+            arrDates: [],
+            arrTemp: [],
+            arrWind: [],
+            arrPressure: []
+        }
+        readings.forEach(obj =>{
+            trendData.arrDates.push(obj.time);
+            trendData.arrTemp.push(obj.temp)
+            trendData.arrWind.push(obj.wind)
+            trendData.arrPressure.push(obj.pressure)
+        })
+
+        console.log(trendData);
+        return trendData;
+    },
+
 };
 
 

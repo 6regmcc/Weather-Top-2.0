@@ -1,0 +1,25 @@
+<div class="ui segment" id="chart"></div>
+<script>
+  dataTemp = {
+    labels: [
+      {{#each data.trendData.arrDates}}
+        "{{getLocalTime this}}",
+      {{/each}}
+    ],
+    datasets: [{
+      name: "Pressure", type: "line",
+      values: [
+        {{#each data.trendData.arrPressure}}
+          "{{this}}",
+        {{/each}}
+      ]
+    }
+    ]
+  };
+  new frappe.Chart("#chart", {
+    dataTemp: data,
+    type: "line",
+    height: 180,
+    colors: ["red"]
+  });
+</script>
