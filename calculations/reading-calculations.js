@@ -13,6 +13,7 @@ class Calculations {
     this.cardinalPoint = setCardinalPoint(reading.windDirection);
     this.beaufort = setBeaufort(reading.wind);
     this.windChill = setWindChill(reading.temp, reading.wind);
+    this.weatherCodeIcon = latestWeatherText(reading.code, 'icon')
   }
 }
 

@@ -1,6 +1,6 @@
-<div class="ui segment" id="chart"></div>
+<div class="ui segment" id="chartwind"></div>
 <script>
-  dataWind = {
+  data = {
     labels: [
       {{#each data.trendData.arrDates}}
         "{{getLocalTime this}}",
@@ -16,8 +16,8 @@
     }
     ]
   };
-  new frappe.Chart("#chart", {
-    data: dataWind,
+  new frappe.Chart("#chartwind", {
+    data: data,
     type: "line",
     height: 180,
     colors: ["red"]

@@ -39,8 +39,8 @@
       "id": "8111a960-2df1-11ed-843b-555722c5d09c",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "name": "Dublin",
-      "latitude": "123",
-      "longitude": "123",
+      "latitude": "53.34",
+      "longitude": "6.26",
       "readings": [
         {
           "code": "300",
@@ -126,8 +126,8 @@
       "id": "70486650-2e14-11ed-a588-013169c3c61e",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "name": "galway",
-      "latitude": "234",
-      "longitude": "345",
+      "latitude": "53.27",
+      "longitude": "9.05",
       "readings": [],
       "calculations": {},
       "minMaxValues": {}
@@ -136,8 +136,8 @@
       "id": "fdfcf550-2ee7-11ed-8cb0-c181a8dbc41d",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
       "name": "athlone",
-      "latitude": "234",
-      "longitude": "234",
+      "latitude": "53.42",
+      "longitude": "7.94",
       "readings": [
         {
           "code": "804",
@@ -174,24 +174,53 @@
           "pressure": "234",
           "id": "c2837830-3056-11ed-ad2e-75a72f6a7f74",
           "time": "2022-09-09T15:47:50.708Z"
+        },
+        {
+          "code": "804",
+          "temp": "15.4",
+          "wind": "1.72",
+          "pressure": "1010",
+          "windDirection": "151",
+          "time": "2022-09-11T13:47:22.225Z",
+          "id": "42d47430-31d8-11ed-b549-33215fd1fdb6"
+        },
+        {
+          "code": "300",
+          "temp": "34.00",
+          "wind": "34",
+          "windDirection": "34",
+          "pressure": "100",
+          "id": "c215d0e0-31d8-11ed-af67-41bbbb26384a",
+          "time": "2022-09-11T13:50:55.726Z"
         }
       ],
       "calculations": {
-        "latestWeatherText": "Partial clouds",
-        "readingUUID": "c2837830-3056-11ed-ad2e-75a72f6a7f74",
-        "fahrenheitTemp": "37.40",
-        "cardinalPoint": "Southwest",
-        "beaufort": 12,
-        "windChill": "-9.38"
+        "latestWeatherText": "Cloudy",
+        "readingUUID": "c215d0e0-31d8-11ed-af67-41bbbb26384a",
+        "fahrenheitTemp": "93.20",
+        "cardinalPoint": "Northeast",
+        "beaufort": 5,
+        "windChill": "37.96",
+        "weatherCodeIcon": "cloud icon"
       },
       "minMaxValues": {
-        "Min-wind": 2,
+        "Min-wind": 1,
         "Max-wind": 234,
         "Min-temp": 3,
-        "Max-temp": 23,
-        "Min-pressure": 132,
+        "Max-temp": 34,
+        "Min-pressure": 100,
         "Max-pressure": 1012
       }
+    },
+    {
+      "id": "c170c500-31dd-11ed-84c4-f75baa2f5316",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Cork",
+      "latitude": "51.89",
+      "longitude": "8.47",
+      "readings": [],
+      "calculations": {},
+      "minMaxValues": {}
     }
   ]
 }
