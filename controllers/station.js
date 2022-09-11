@@ -63,7 +63,6 @@ const station = {
         const result = await axios.get(requestUrl);
         if (result.status == 200) {
             const reading = result.data;
-            console.log(reading);
 
             report.code = `${reading.weather[0].id}`;
             report.temp = `${reading.main.temp}`;
@@ -76,7 +75,7 @@ const station = {
             stationStore.addReading(stationId, report,)
 
         }
-        console.log(report);
+
         response.redirect('/station/' + stationId);
     }
 

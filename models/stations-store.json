@@ -1,215 +1,65 @@
 {
   "stationCollection": [
     {
-      "id": "56b0bdd0-2d3a-11ed-8307-f3943329af27",
-      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
-      "name": "Dublin",
-      "readings": [
-        {
-          "code": "600",
-          "temp": "40",
-          "wind": "40",
-          "windDirection": "300",
-          "pressure": "1000",
-          "id": "5f735360-2d3a-11ed-b60a-cbe2d8966363"
-        }
-      ],
-      "calculations": [
-        {
-          "latestWeatherText": "Rain",
-          "readingUUID": "5f735360-2d3a-11ed-b60a-cbe2d8966363",
-          "fahrenheitTemp": "104.00",
-          "cardinalPoint": "West-Northwest",
-          "beaufort": 6,
-          "windChill": "46.08"
-        }
-      ],
-      "minMaxValues": [
-        {
-          "Min-wind": "40",
-          "Max-wind": "40",
-          "Min-temp": "40",
-          "Max-temp": "40",
-          "Min-pressure": "1000",
-          "Max-pressure": "1000"
-        }
-      ]
-    },
-    {
-      "id": "8111a960-2df1-11ed-843b-555722c5d09c",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "name": "Dublin",
-      "latitude": "53.34",
-      "longitude": "6.26",
-      "readings": [
-        {
-          "code": "300",
-          "temp": "123.00",
-          "wind": "123",
-          "windDirection": "132",
-          "pressure": "123",
-          "id": "d42a1160-2e0e-11ed-aeb8-49485a8f0e4c"
-        },
-        {
-          "code": "100",
-          "temp": "23.00",
-          "wind": "30",
-          "windDirection": "234",
-          "pressure": "234",
-          "id": "6256a5b0-2e15-11ed-bb37-cbe296a4523c"
-        },
-        {
-          "code": "400",
-          "temp": "4.00",
-          "wind": "1",
-          "windDirection": "234",
-          "pressure": "234",
-          "id": "9614f460-2e15-11ed-806a-735a1d5999ea"
-        },
-        {
-          "code": "300",
-          "temp": "4.00",
-          "wind": "234",
-          "windDirection": "24",
-          "pressure": "345345345",
-          "id": "9cee0970-2e15-11ed-af19-a94268c2d713"
-        },
-        {
-          "code": "200",
-          "temp": "234.00",
-          "wind": "4",
-          "windDirection": "234",
-          "pressure": "35",
-          "id": "aa6107b0-2e15-11ed-b4ac-671c3dfc0905"
-        },
-        {
-          "code": 800,
-          "temp": 39.71,
-          "wind": 5.66,
-          "pressure": 1002,
-          "windDirection": 340,
-          "time": "2022-09-08T22:36:27.999Z"
-        },
-        {
-          "code": 800,
-          "temp": 39.71,
-          "wind": 5.66,
-          "pressure": 1002,
-          "windDirection": 340,
-          "time": "2022-09-08T22:36:52.468Z"
-        },
-        {
-          "code": 520,
-          "temp": 15.32,
-          "wind": 3.6,
-          "pressure": 1005,
-          "windDirection": 280,
-          "time": "2022-09-08T22:38:58.894Z"
-        }
-      ],
-      "calculations": {
-        "fahrenheitTemp": "59.58",
-        "cardinalPoint": "West",
-        "beaufort": 1,
-        "windChill": "16.14"
-      },
-      "minMaxValues": {
-        "Min-wind": 1,
-        "Max-wind": 234,
-        "Min-temp": 4,
-        "Max-temp": 234,
-        "Min-pressure": 35,
-        "Max-pressure": 345345345
-      }
-    },
-    {
-      "id": "70486650-2e14-11ed-a588-013169c3c61e",
-      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "name": "galway",
-      "latitude": "53.27",
-      "longitude": "9.05",
-      "readings": [],
-      "calculations": {},
-      "minMaxValues": {}
-    },
-    {
       "id": "fdfcf550-2ee7-11ed-8cb0-c181a8dbc41d",
       "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
-      "name": "athlone",
+      "name": "Athlone",
       "latitude": "53.42",
       "longitude": "7.94",
       "readings": [
         {
           "code": "804",
-          "temp": "18.76",
-          "wind": "3.81",
-          "pressure": "1012",
-          "windDirection": "338",
-          "time": "2022-09-09T15:12:34.246Z",
-          "id": "d5012660-3051-11ed-afc2-6d577257f412"
-        },
-        {
-          "code": "804",
-          "temp": "18.76",
-          "wind": "3.81",
-          "pressure": "1012",
-          "windDirection": "338",
-          "time": "2022-09-09T15:12:38.356Z",
-          "id": "d7744940-3051-11ed-8adc-f5d9d73af1e7"
+          "temp": "16.17",
+          "wind": "1.98",
+          "pressure": "1009",
+          "windDirection": "185",
+          "time": "2022-09-11T14:37:07.697Z",
+          "id": "364f5430-31df-11ed-8591-dda085b3ea65"
         },
         {
           "code": "300",
-          "temp": "23.00",
-          "wind": "2",
-          "windDirection": "345",
-          "pressure": "132",
-          "id": "baad8c90-3056-11ed-8c78-41bb0e6416e2",
-          "time": "2022-09-09T15:47:37.562Z"
+          "temp": "12.00",
+          "wind": "23",
+          "windDirection": "123",
+          "pressure": "1000",
+          "id": "35e44b70-31e1-11ed-a1db-f981a1edaf96",
+          "time": "2022-09-11T14:51:25.991Z"
         },
         {
           "code": "200",
-          "temp": "3.00",
-          "wind": "234",
-          "windDirection": "234",
-          "pressure": "234",
-          "id": "c2837830-3056-11ed-ad2e-75a72f6a7f74",
-          "time": "2022-09-09T15:47:50.708Z"
+          "temp": "20.00",
+          "wind": "33",
+          "windDirection": "132",
+          "pressure": "1002",
+          "id": "58b08740-31e1-11ed-8acd-1f4c4607785d",
+          "time": "2022-09-11T14:52:24.372Z"
         },
         {
-          "code": "804",
-          "temp": "15.4",
-          "wind": "1.72",
-          "pressure": "1010",
-          "windDirection": "151",
-          "time": "2022-09-11T13:47:22.225Z",
-          "id": "42d47430-31d8-11ed-b549-33215fd1fdb6"
-        },
-        {
-          "code": "300",
-          "temp": "34.00",
-          "wind": "34",
-          "windDirection": "34",
-          "pressure": "100",
-          "id": "c215d0e0-31d8-11ed-af67-41bbbb26384a",
-          "time": "2022-09-11T13:50:55.726Z"
+          "code": "400",
+          "temp": "24.00",
+          "wind": "12",
+          "windDirection": "213",
+          "pressure": "1004",
+          "id": "61cb27e0-31e1-11ed-84b3-11037ccefa74",
+          "time": "2022-09-11T14:52:39.646Z"
         }
       ],
       "calculations": {
-        "latestWeatherText": "Cloudy",
-        "readingUUID": "c215d0e0-31d8-11ed-af67-41bbbb26384a",
-        "fahrenheitTemp": "93.20",
-        "cardinalPoint": "Northeast",
-        "beaufort": 5,
-        "windChill": "37.96",
-        "weatherCodeIcon": "cloud icon"
+        "latestWeatherText": "Light Showers",
+        "readingUUID": "61cb27e0-31e1-11ed-84b3-11037ccefa74",
+        "fahrenheitTemp": "75.20",
+        "cardinalPoint": "South-Southwest",
+        "beaufort": 3,
+        "windChill": "25.28",
+        "weatherCodeIcon": "cloud sun rain icon"
       },
       "minMaxValues": {
         "Min-wind": 1,
-        "Max-wind": 234,
-        "Min-temp": 3,
-        "Max-temp": 34,
-        "Min-pressure": 100,
-        "Max-pressure": 1012
+        "Max-wind": 33,
+        "Min-temp": 12,
+        "Max-temp": 24,
+        "Min-pressure": 1000,
+        "Max-pressure": 1009
       }
     },
     {
@@ -218,9 +68,229 @@
       "name": "Cork",
       "latitude": "51.89",
       "longitude": "8.47",
-      "readings": [],
-      "calculations": {},
-      "minMaxValues": {}
+      "readings": [
+        {
+          "code": "300",
+          "temp": "20.00",
+          "wind": "21",
+          "windDirection": "123",
+          "pressure": "1001",
+          "id": "dcb072e0-31e0-11ed-8ed2-51139230c34e",
+          "time": "2022-09-11T14:48:56.335Z"
+        },
+        {
+          "code": "300",
+          "temp": "18.87",
+          "wind": "5.14",
+          "pressure": "1010",
+          "windDirection": "200",
+          "time": "2022-09-11T14:49:01.557Z",
+          "id": "dfcd9160-31e0-11ed-beda-ebd37de554a1"
+        },
+        {
+          "code": "200",
+          "temp": "23.00",
+          "wind": "11",
+          "windDirection": "213",
+          "pressure": "1020",
+          "id": "f5ff2d90-31e0-11ed-ab8e-897ad075af1e",
+          "time": "2022-09-11T14:49:38.793Z"
+        },
+        {
+          "code": "400",
+          "temp": "12.00",
+          "wind": "33",
+          "windDirection": "200",
+          "pressure": "1000",
+          "id": "05780df0-31e1-11ed-9f2e-cfc8593d9cfc",
+          "time": "2022-09-11T14:50:04.751Z"
+        }
+      ],
+      "calculations": {
+        "latestWeatherText": "Light Showers",
+        "readingUUID": "05780df0-31e1-11ed-9f2e-cfc8593d9cfc",
+        "fahrenheitTemp": "53.60",
+        "cardinalPoint": "South-Southwest",
+        "beaufort": 5,
+        "windChill": "9.01",
+        "weatherCodeIcon": "cloud sun rain icon"
+      },
+      "minMaxValues": {
+        "Min-wind": 5,
+        "Max-wind": 33,
+        "Min-temp": 12,
+        "Max-temp": 23,
+        "Min-pressure": 1000,
+        "Max-pressure": 1020
+      }
+    },
+    {
+      "id": "83b37e40-31df-11ed-8c4f-f7108b496a45",
+      "userid": "3ad52697-6d98-4d80-8273-084de55a86c0",
+      "name": "Dublin",
+      "latitude": "53.34",
+      "longitude": "6.26",
+      "readings": [
+        {
+          "code": "803",
+          "temp": "17.46",
+          "wind": "7.72",
+          "pressure": "1010",
+          "windDirection": "180",
+          "time": "2022-09-11T14:39:49.713Z",
+          "id": "96e0db20-31df-11ed-914e-c560ea2075a2"
+        },
+        {
+          "code": "300",
+          "temp": "23.00",
+          "wind": "23",
+          "windDirection": "234",
+          "pressure": "999",
+          "id": "b278c280-31df-11ed-b8c1-63b9e0c77f82",
+          "time": "2022-09-11T14:40:36.009Z"
+        },
+        {
+          "code": "400",
+          "temp": "19.00",
+          "wind": "12",
+          "windDirection": "200",
+          "pressure": "980",
+          "id": "bc036300-31df-11ed-a683-f7ec9dac247d",
+          "time": "2022-09-11T14:40:52.016Z"
+        },
+        {
+          "code": "200",
+          "temp": "16.00",
+          "wind": "34",
+          "windDirection": "123",
+          "pressure": "1004",
+          "id": "ca8f7260-31df-11ed-8c65-9bb06870e5ab",
+          "time": "2022-09-11T14:41:16.422Z"
+        }
+      ],
+      "calculations": {
+        "latestWeatherText": "Partial clouds",
+        "readingUUID": "ca8f7260-31df-11ed-8c65-9bb06870e5ab",
+        "fahrenheitTemp": "60.80",
+        "cardinalPoint": "East-Southeast",
+        "beaufort": 5,
+        "windChill": "14.23",
+        "weatherCodeIcon": "cloud sun icon"
+      },
+      "minMaxValues": {
+        "Min-wind": 7,
+        "Max-wind": 34,
+        "Min-temp": 16,
+        "Max-temp": 23,
+        "Min-pressure": 980,
+        "Max-pressure": 1010
+      }
+    },
+    {
+      "id": "8a3c1770-31e1-11ed-b24f-99bf4d87d14e",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "Cork",
+      "latitude": "51.89",
+      "longitude": "8.47",
+      "readings": [
+        {
+          "code": "300",
+          "temp": "18.87",
+          "wind": "5.14",
+          "pressure": "1010",
+          "windDirection": "200",
+          "time": "2022-09-11T14:57:00.291Z",
+          "id": "fd266d30-31e1-11ed-82fc-770f2e094628"
+        },
+        {
+          "code": "200",
+          "temp": "12.00",
+          "wind": "34",
+          "windDirection": "213",
+          "pressure": "1000",
+          "id": "03ea9ab0-31e2-11ed-9d74-496ba73e8411",
+          "time": "2022-09-11T14:57:11.643Z"
+        },
+        {
+          "code": "400",
+          "temp": "12.00",
+          "wind": "23",
+          "windDirection": "132",
+          "pressure": "1002",
+          "id": "270a26a0-31e2-11ed-9e11-a187b1796ad5",
+          "time": "2022-09-11T14:58:10.570Z"
+        }
+      ],
+      "calculations": {
+        "latestWeatherText": "Light Showers",
+        "readingUUID": "270a26a0-31e2-11ed-9e11-a187b1796ad5",
+        "fahrenheitTemp": "53.60",
+        "cardinalPoint": "Southeast",
+        "beaufort": 4,
+        "windChill": "9.66",
+        "weatherCodeIcon": "cloud sun rain icon"
+      },
+      "minMaxValues": {
+        "Min-wind": 5,
+        "Max-wind": 34,
+        "Min-temp": 12,
+        "Max-temp": 18,
+        "Min-pressure": 1000,
+        "Max-pressure": 1010
+      }
+    },
+    {
+      "id": "5d0b6070-31e2-11ed-bb1b-8f7b9ef7e9b4",
+      "userid": "2b6f0989-7b7f-4a38-ad26-aa06b922d751",
+      "name": "Galway",
+      "latitude": "53.27",
+      "longitude": "9.05",
+      "readings": [
+        {
+          "code": "804",
+          "temp": "15.84",
+          "wind": "1.77",
+          "pressure": "1009",
+          "windDirection": "173",
+          "time": "2022-09-11T14:59:49.097Z",
+          "id": "61c42d90-31e2-11ed-b279-6593ce8784bb"
+        },
+        {
+          "code": "500",
+          "temp": "12.00",
+          "wind": "32",
+          "windDirection": "254",
+          "pressure": "1000",
+          "id": "69df86a0-31e2-11ed-900c-0b0f42582c3f",
+          "time": "2022-09-11T15:00:02.698Z"
+        },
+        {
+          "code": "20",
+          "temp": "12.00",
+          "wind": "32",
+          "windDirection": "214",
+          "pressure": "1012",
+          "id": "726a6a60-31e2-11ed-a40f-bdd789d43cb1",
+          "time": "2022-09-11T15:00:17.031Z"
+        }
+      ],
+      "calculations": {
+        "latestWeatherText": "invalid code",
+        "readingUUID": "726a6a60-31e2-11ed-a40f-bdd789d43cb1",
+        "fahrenheitTemp": "53.60",
+        "cardinalPoint": "Southwest",
+        "beaufort": 5,
+        "windChill": "9.07",
+        "weatherCodeIcon": "invalid code"
+      },
+      "minMaxValues": {
+        "Min-wind": 1,
+        "Max-wind": 32,
+        "Min-temp": 12,
+        "Max-temp": 15,
+        "Min-pressure": 1000,
+        "Max-pressure": 1012
+      }
     }
   ]
 }
