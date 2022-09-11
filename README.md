@@ -1,7 +1,8 @@
-Welcome to the Glitch Template
+Welcome to the WeatherTop 2.0
 ==============================
 
-A starter project for learning Glitch.
+Issues
 
-This is an Express.js project, designed to work well with the Glitch development environment. It includes basic express setup, templating, routing, JSON based model and session support.
-
+1. Erros showing in console 
+2. Could not connect errors sometimes show when reading and writing to JSON file 
+3. WeatherTop 2.0 only supports locaitons in the Republic of Ireland
